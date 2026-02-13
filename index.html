@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan Sinkar | Portfolio</title>
+    <!-- Theme color meta tag for mobile browsers (optional, browser dependent) -->
+
+    <meta name="description"
+        content="Portfolio of Bhushan - Data Analyst & Web Developer. Transforming data into insights and crafting exceptional digital experiences.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon (Optional placeholder) -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>B</text></svg>">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="brace">&lt;</span>
+            <span class="loader-name">Bhushan</span>
+            <span class="slash">/</span>
+            <span class="brace">&gt;</span>
+        </div>
+    </div>
+
+    <!-- Background Canvas -->
+    <canvas id="code-bg"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="logo">Bhushan.</a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-greeting">👋 Hello, I'm Bhushan</div>
+                <h1>Software <span class="typewriter"></span><span class="cursor-blink">|</span></h1>
+                <p class="hero-desc">
+                    Specializing in Data Analytics & High-Performance Web Development.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-outline btn-contact-cta">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Section (Combines About & Skills) -->
+        <section id="about" class="bento-section">
+            <div class="container">
+                <div class="section-header fade-in-section section-header-centered">
+                    <h2>About Me</h2>
+                    <p>Get to know the person behind the pixels.</p>
+                </div>
+
+                <div class="about-wrapper">
+                    <div class="about-image-container fade-in-section">
+                        <img src="bhushan-1-removebg-preview.png" alt="Bhushan Sinkar" class="about-img">
+                        <div class="img-backdrop"></div>
+                    </div>
+
+                    <div class="about-text fade-in-section">
+                        <h3 class="about-name">Bhushan Sinkar</h3>
+                        <h4 class="about-title">Data Analyst & Web Developer
+                        </h4>
+
+                        <p class="about-intro">
+                            I am a passionate tech enthusiast with a dual love for analyzing complex data and building
+                            seamless digital experiences.
+                            With a strong foundation in <span
+                                class="highlight-accent">Python, SQL, and
+                                JavaScript</span>,
+                            I bridge the gap between backend logic and frontend beauty.
+                        </p>
+
+                        <p>
+                            When I'm not coding or querying databases, I'm exploring new technologies, contributing to
+                            open source,
+                            or constantly refining my craft to build better, faster, and more accessible web
+                            applications.
+                        </p>
+
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-outline">Let's Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (New) -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header fade-in-section section-header-centered">
+                    <h2>Technical Arsenal</h2>
+                    <p>My weapons of choice for building digital products.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="glass-card skill-category fade-in-section">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag"><i class="devicon-react-original colored"></i> React</div>
+                            <div class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                            <div class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML5</div>
+                            <div class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS3</div>
+                            <div class="skill-tag"><i class="devicon-nextjs-plain skill-icon-dark"></i>
+                                Next.js</div>
+                            <div class="skill-tag"><i class="devicon-tailwindcss-original colored"></i> Tailwind</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Data -->
+                    <div class="glass-card skill-category fade-in-section">
+                        <h3 class="skill-category-title">Backend & Data</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag"><i class="devicon-python-plain colored"></i> Python</div>
+                            <div class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+                            <div class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+                            <div class="skill-tag"><i class="devicon-pandas-plain colored"></i> Pandas</div>
+                            <div class="skill-tag"><i class="devicon-numpy-plain colored"></i> NumPy</div>
+                            <div class="skill-tag"><i class="devicon-express-original skill-icon-dark"></i> Express</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="glass-card skill-category fade-in-section">
+                        <h3 class="skill-category-title">Tools & DevOps</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag"><i class="devicon-git-plain colored"></i> Git</div>
+                            <div class="skill-tag"><i class="devicon-github-original skill-icon-dark"></i> GitHub</div>
+                            <div class="skill-tag"><i class="devicon-docker-plain colored"></i> Docker</div>
+                            <div class="skill-tag"><i class="devicon-vscode-plain colored"></i> VS Code</div>
+                            <div class="skill-tag"><i class="devicon-postman-plain colored"></i> Postman</div>
+                            <div class="skill-tag"><i class="devicon-figma-plain colored"></i> Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Glass Cards) -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header fade-in-section">
+                    <h2>Featured Work</h2>
+                    <p>Selected projects showcasing my expertise.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="devicon-google-plain colored"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sales Analytics</h3>
+                            <p>Data visualization dashboard for revenue forecasting.</p>
+                            <div class="project-tags">
+                                <span class="project-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="project-tag">Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="devicon-react-original colored"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce</h3>
+                            <p>Full-stack shopping platform with Stripe integration.</p>
+                            <div class="project-tags">
+                                <span class="project-tag"><i class="devicon-react-original"></i> React</span>
+                                <span class="project-tag"><i class="devicon-nodejs-plain"></i> Node</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="devicon-scikitlearn-plain colored"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Customer Segmentation</h3>
+                            <p>ML customer clustering model.</p>
+                            <div class="project-tags">
+                                <span class="project-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="project-tag">Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications (Optional - kept as is but styled with modern grid if needed later, for now simple list/grid) -->
+
+        <!-- Contact Section (Glass Card Redesign) -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="glass-card fade-in-section contact-card">
+                    <h2 class="contact-heading">Let's Build Something Amazing</h2>
+                    <p class="contact-text">
+                        Have a project in mind or just want to chat? I'm currently open to new opportunities.
+                    </p>
+                    <a href="mailto:bhushansinkar2005@gmail.com" class="btn btn-primary contact-btn">
+                        Say Hello <span class="wave">👋</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Multi-column) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-col">
+                    <div class="logo footer-logo">Bhushan.</div>
+                    <p class="footer-desc">
+                        Crafting digital experiences with code and creativity.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links-footer">
+                        <a href="https://github.com/bhushan-sudo" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="devicon-github-original"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bhushan-sinkar-626650357" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="devicon-linkedin-plain"></i>
+                        </a>
+                        <a href="https://twitter.com/bhushan_sinkar" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <i class="devicon-twitter-original"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bhushan Sinkar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
